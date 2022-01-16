@@ -2,26 +2,26 @@
 import os
 import random
 import string
-import telebot
+#import telebot
 from rich import print
 from dotenv import load_dotenv
 from rich.console import Console
 from ldap3 import Server, Connection
 
 # Constants
-
+'''
 load_dotenv()
 TOKEN = os.environ.get("TOKEN")
 TG_UID = int(os.environ.get("TG_UID"))
 PASS = 0
-
+'''
 console = Console()
-
+"""
 # Approved users, username: telegram_id
 aproved_users = {
     'read-only-admin': TG_UID,  # Value: Telegram UID (int)
 }
-
+"""
 
 def user_login(username: str, password: str) -> bool:
     """
